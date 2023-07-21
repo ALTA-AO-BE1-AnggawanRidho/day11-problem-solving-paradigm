@@ -1,13 +1,13 @@
 // Problem 2 - Simple Equations
 
-function solveXYZ(A, B, C) {
-    for (let x = 1; x <= A; x++) {
-      for (let y = 1; y <= A; y++) {
-        const z = A - x - y;
-        if (x * y * z === B && x ** 2 + y ** 2 + z ** 2 === C) {
-          return [x, y, z];
+function simpleEquations(a, b, c) {
+    for (let x = 1; x <= a; x++) {
+        for (let y = x + 1; y <= a; y++) {
+            const z = a - x - y;
+            if (x * y * z === b && x ** 2 + y ** 2 + z ** 2 === c) {
+                return [x, y, z];
+            }
         }
-      }
     }
     return null; // If no solution is found within the given constraints
 }
