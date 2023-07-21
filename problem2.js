@@ -13,5 +13,5 @@ function simpleEquations(a, b, c) {
 }
 
 // Examples
-console.log(solveXYZ(1, 2, 3)); // Output: null (No solution)
-console.log(solveXYZ(6, 6, 14)); // Output: [1, 2, 3]
+console.log(simpleEquations(1, 2, 3)); // Output: null (No solution)
+console.log(simpleEquations(6, 6, 14)); // Output: [1, 2, 3]
